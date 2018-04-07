@@ -34,3 +34,15 @@
             result[0].Children.Sum(p => p.Children.Count).ShouldBeGreaterThanOrEqualTo(334);
 
         }
+
+		[Fact]
+        public async Task GetDistrictsByKeywords_TestsAsync()
+        {
+            var result = await DistrictsProvider.GetDistricts("湖南");
+            result.ShouldNotBeNull();
+
+            //截止2017年9月12日，湖南省共计划分为14个地区（13地级市和1自治州），122个县级行政区包括35个市辖区、17个县级市、63个县和7个自治县
+            result[0].Children.Count.ShouldBeGreaterThanOrEqualTo(14);
+            result[0].Children.Sum(p => p.Children.Count).ShouldBeGreaterThanOrEqualTo(122);
+
+        }
