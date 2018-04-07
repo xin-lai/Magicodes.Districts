@@ -1,4 +1,4 @@
-# Magicodes.Sms
+# Magicodes.Districts
       行政区域信息核心库。以便于获取最新的行政区域数据用于自动更新业务数据库等。
       官方网址：http://xin-lai.com
       开源库地址:https://github.com/xin-lai
