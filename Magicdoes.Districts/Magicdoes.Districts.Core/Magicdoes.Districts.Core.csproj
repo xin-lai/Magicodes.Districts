@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>
+      行政区域信息核心库。
+      官方网址：http://xin-lai.com
+      开源库地址:https://github.com/xin-lai
+      博客地址：http://www.cnblogs.com/codelove/
+      交流QQ群：85318032
+      小店地址：https://shop113059108.taobao.com/
+    </Description>
+    <Version>1.1.1</Version>
+    <Company>湖南心莱信息科技有限公司</Company>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+</Project>
